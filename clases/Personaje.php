@@ -18,8 +18,8 @@ class Personaje {
         $this->carisma = $carisma;
         $this->agilidad = $agilidad;
     }
-    //public function agregarArma(Arma ) {
+    /*public function agregarArma(Arma ) {
 
-    //}
+    }*/
 }
 ?>
