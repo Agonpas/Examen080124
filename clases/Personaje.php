@@ -21,6 +21,9 @@ class Personaje {
         $this->agilidad = $agilidad;
         $this->rasgo = $rasgo;
     }
+    public function __toString() {
+        return "Nombre:  {$this->nombre}" . PHP_EOL . "Fuerza: {$this->fuerza}" . PHP_EOL . "Percepción: {$this->percepcion}" . PHP_EOL . "Carisma: {$this->carisma}" . PHP_EOL . "Agilidad: {$this->agilidad}". PHP_EOL . "Rasgo: {$this->rasgo->name}" . PHP_EOL;
+    }
     /*setters*/
     public function setFuerza (int $fuerza) {
         $this->fuerza = $fuerza;
@@ -54,7 +57,7 @@ class Personaje {
         } else {
             echo PHP_EOL . "El {$this->nombre} ha conseguido las siguientes armas: " . PHP_EOL;
             foreach ($this->armas as $indice=> $arma) {
-                echo "+ El arma " . $indice + 1 . " es: " . $arma->getNombre() .  PHP_EOL . "- Tiene una capacidad para munición de: " . $arma->getMunicion() .  PHP_EOL . "- Hace un daño de: " . $arma->getDanyo() .  PHP_EOL . "- Tiene un alcance de: " . $arma->getAlcance() .  PHP_EOL;
+                echo "+ El arma " . $indice + 1 . " es: " . $arma->getNombre() .  PHP_EOL . "- Tiene una capacidad para munición de: " . $arma->getMunicion() .  PHP_EOL . "- Hace un daño de: " . $arma->getDanyo() .  PHP_EOL . "- Tiene un alcance de: " . $arma->getAlcance() . PHP_EOL;
             }
         }
     }

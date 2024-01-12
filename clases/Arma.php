@@ -11,7 +11,7 @@ class Arma {
         $this->alcance =  $alcance;
     }
     public function __toString() {
-        return "El nombre es {$this->nombre}" . PHP_EOL. "La munición es de {$this->municion} " . PHP_EOL . "El daño es de {$this->danyo}". PHP_EOL . "El alcance es: {$this->alcance}";
+        return "El nombre es {$this->nombre}" . PHP_EOL. "La munición es de {$this->municion} " . PHP_EOL . "El daño es de {$this->danyo}". PHP_EOL . "El alcance es: {$this->alcance}" . PHP_EOL;
     }
     /*getters*/
     public function getNombre(): string {
