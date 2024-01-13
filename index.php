@@ -11,5 +11,4 @@ $personaje1->agregarArma(new Arma("Pistola", 25, 3, 5));
 $personaje1->agregarArma(new Arma("Ametralladora", 100, 4, 7));
 $personaje1->mostrarArmas();
 $personaje2->mostrarArmas();
-
 ?>
